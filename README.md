@@ -1,36 +1,30 @@
 # 🚀 Flutter ERP Task App
 
-A complete job management application built with Flutter for the Agribasket assessment.
-
----
+A complete job management application built with **Flutter** for the **Agribasket Developer Assessment**.
 
 ## 📱 Features
 
-- **User Authentication** - Secure login with token management
-- **Job List** - Paginated list with infinite scroll
-- **Status Management** - Update job status with optimistic UI
-- **Filtering** - Real-time status filtering
-- **Offline Support** - Basic offline queue for updates
-- **Modern UI** - Professional, responsive design
-
----
+- **User Authentication** – Secure login with token management  
+- **Job List** – Paginated list with infinite scroll  
+- **Status Management** – Update job status with optimistic UI  
+- **Filtering** – Real-time status filtering  
+- **Offline Support** – Basic offline queue for updates  
+- **Modern UI** – Professional, responsive design  
 
 ## 🛠️ Tech Stack
 
-- **Flutter 3.0+** with Dart 3.0+
-- **BLoC/Cubit** for state management
-- **Dio** for networking
-- **SharedPreferences** for local caching
-- **flutter Routes** for navigation
-
----
+- **Flutter 3.0+** with Dart 3.0+  
+- **BLoC / Cubit** for state management  
+- **Dio** for networking  
+- **SharedPreferences** for local caching  
+- **flutter_routes** for navigation  
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Flutter 3.0.0+
-- Dart 3.0.0+
+- Flutter **3.0.0+**
+- Dart **3.0.0+**
 
 ### Installation
 
@@ -39,25 +33,26 @@ git clone https://github.com/mohamedhisham1369/taskapp.git
 cd taskapp
 flutter pub get
 flutter run
-Build APK
-bash
-Copy code
+```
+
+### Build APK
+
+```bash
 flutter build apk --debug
-📸 Screenshots
-Job List Screen
+```
 
+## 📸 Screenshots
 
-Job Details Screen
+**Job List Screen**  
+**Job Details Screen**  
+**Login Screen**  
 
+**App Demo**  
+<img src="screenshots/app_gif.gif" width="300" />
 
-Login Screen
+## 📁 Project Structure
 
-
-App GIF
-<img src="screenshots/app_gif.gif" width="300">
-📁 Project Structure
-plaintext
-Copy code
+```plaintext
 lib/
 ├── core/
 │   ├── cache_helper/
@@ -77,77 +72,96 @@ lib/
 │           ├── screens/
 │           └── widgets/
 └── main.dart
-🔌 API
-Base URL: https://68f6b896f7fb897c661366d7.mockapi.io/api/v1
+```
 
-Endpoints:
+## 🔌 API
 
-POST /auth/login
+**Base URL:**  
+```
+https://68f6b896f7fb897c661366d7.mockapi.io/api/v1
+```
 
-GET /job?page=1&limit=10
+**Endpoints:**
 
-GET /job/:id
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| POST | `/auth/login` | User login |
+| GET | `/job?page=1&limit=10` | Paginated job list |
+| GET | `/job/:id` | Fetch job details |
+| PATCH | `/job/:id` | Update job status |
 
-PATCH /job/:id
-
-Login Credentials:
-
+**Demo Credentials:**
+```
 Email: demo@demo.com
-
 Password: password
+```
 
-🎯 Implementation
-State Management
+## 🎯 Implementation
 
-jobCubit - Manages job list, pagination, filtering
+### State Management
+- **JobCubit** – Manages job list, pagination, and filtering  
+- **JobDetailsCubit** – Handles job status updates
 
-JobDetailsCubit - Handles status updates
+### Core Features
+- **Pagination** – Infinite scroll with load more  
+- **Filtering** – Chip-based real-time filters  
+- **Optimistic UI** – Instant feedback with rollback on failure  
+- **Offline Queue** – Queued updates for offline mode  
 
-Features
+## 📝 Requirements Coverage
 
-Pagination - Infinite scroll with load more
+| Requirement | Status |
+|--------------|--------|
+| Flutter 3.x + Dart | ✅ |
+| State Management | ✅ |
+| Networking | ✅ |
+| Authentication | ✅ |
+| Pagination | ✅ |
+| Status Updates | ✅ |
+| Offline Support | ⚠️ (Basic Queue) |
+| Testing | ✅ |
+| UI/UX Polish | ✅ |
 
-Filtering - Chip-based status filters
+## ⚙️ Known Issues & Limitations
 
-Optimistic UI - Immediate updates with rollback
+- 💤 **Offline Mode:** Only basic queueing is implemented; complex sync logic is not yet included.  
+- 🔒 **Error Handling:** Some network errors show generic messages.  
+- 🔄 **Refresh Tokens:** Token refresh is not implemented (session expires on logout).  
+- 📱 **Tablet UI:** Optimized primarily for mobile screens.  
+- 🧪 **Testing:** Only basic widget and cubit tests included (no full integration tests).  
 
-Offline Queue - Basic offline update queuing
+## 🧪 Testing Instructions
 
-📝 Requirements Coverage
-Requirement	Status
-Flutter 3.x + Dart	✅
-State Management	✅
-Networking	✅
-Authentication	✅
-Pagination	✅
-Status Updates	✅
-Offline Support	⚠️
-Testing	✅
-UI/UX Polish	✅
+Run all test suites with:
+```bash
+flutter test
+```
 
-👨‍💻 Developer
-Mohamed Hisham
-GitHub: mohamedhisham1369
+To run specific tests (e.g., Job Cubit):
+```bash
+flutter test test/features/jobs/domain/job_cubit_test.dart
+```
 
-Built for Agribasket Flutter Developer Assessment - October 2025
+You can also enable test coverage:
+```bash
+flutter test --coverage
+```
 
-✅ Instructions
-Create this README file in your project root.
+## 👨‍💻 Developer
 
-Update your pubspec.yaml description.
+**Mohamed Hisham**  
+GitHub: [@mohamedhisham1369](https://github.com/mohamedhisham1369)  
 
-Push to GitHub:
+Built for **Agribasket Flutter Developer Assessment – October 2025**
 
-bash
-Copy code
+## ✅ Submission Instructions
+
+1. Create this README file in your project root.  
+2. Update the `description` field in your `pubspec.yaml`.  
+3. Push changes to GitHub:
+
+```bash
 git add README.md
 git commit -m "Add project documentation"
 git push origin main
-yaml
-Copy code
-
----
-
-If you want, I can also **add a “Known Issues & Limitations” and “Testing Instructions” section** to make it fully polished for professional submission.  
-
-Do you want me to do that next?
+```
