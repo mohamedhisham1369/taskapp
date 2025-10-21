@@ -2,6 +2,8 @@
 
 A complete job management application built with Flutter for the Agribasket assessment.
 
+---
+
 ## 📱 Features
 
 - **User Authentication** - Secure login with token management
@@ -11,6 +13,8 @@ A complete job management application built with Flutter for the Agribasket asse
 - **Offline Support** - Basic offline queue for updates
 - **Modern UI** - Professional, responsive design
 
+---
+
 ## 🛠️ Tech Stack
 
 - **Flutter 3.0+** with Dart 3.0+
@@ -19,44 +23,42 @@ A complete job management application built with Flutter for the Agribasket asse
 - **SharedPreferences** for local caching
 - **flutter Routes** for navigation
 
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Flutter 3.0.0+
 - Dart 3.0.0+
 
 ### Installation
+
 ```bash
 git clone https://github.com/mohamedhisham1369/taskapp.git
 cd taskapp
 flutter pub get
 flutter run
-
-
-
-
 Build APK
 bash
+Copy code
 flutter build apk --debug
+📸 Screenshots
+Job List Screen
 
 
-## 📸 Screenshots
-
-### Job List Screen
-![Job List](screenshots/all_jobs.png)
-
-### Job Details Screen
-![Job Details](assets/screenshots/job_details.png)
+Job Details Screen
 
 
-### Job login
-![Job Details](screenshots/login.png)
+Login Screen
+
+
+App GIF
 <img src="screenshots/app_gif.gif" width="300">
-
-
 📁 Project Structure
-text
-llib/
+plaintext
+Copy code
+lib/
 ├── core/
 │   ├── cache_helper/
 │   ├── themes/
@@ -75,7 +77,6 @@ llib/
 │           ├── screens/
 │           └── widgets/
 └── main.dart
-
 🔌 API
 Base URL: https://68f6b896f7fb897c661366d7.mockapi.io/api/v1
 
@@ -97,11 +98,13 @@ Password: password
 
 🎯 Implementation
 State Management
+
 jobCubit - Manages job list, pagination, filtering
 
 JobDetailsCubit - Handles status updates
 
 Features
+
 Pagination - Infinite scroll with load more
 
 Filtering - Chip-based status filters
@@ -109,7 +112,6 @@ Filtering - Chip-based status filters
 Optimistic UI - Immediate updates with rollback
 
 Offline Queue - Basic offline update queuing
-
 
 📝 Requirements Coverage
 Requirement	Status
@@ -122,21 +124,30 @@ Status Updates	✅
 Offline Support	⚠️
 Testing	✅
 UI/UX Polish	✅
+
 👨‍💻 Developer
 Mohamed Hisham
 GitHub: mohamedhisham1369
 
-*Built for Agribasket Flutter Developer Assessment - October 2025*
+Built for Agribasket Flutter Developer Assessment - October 2025
 
-text
+✅ Instructions
+Create this README file in your project root.
 
-**That's it!** This single README file covers everything you need for documentation. Just:
+Update your pubspec.yaml description.
 
-1. **Create this file** in your project root
-2. **Update your pubspec.yaml** description
-3. **Push to GitHub**
+Push to GitHub:
 
-```bash
+bash
+Copy code
 git add README.md
 git commit -m "Add project documentation"
 git push origin main
+yaml
+Copy code
+
+---
+
+If you want, I can also **add a “Known Issues & Limitations” and “Testing Instructions” section** to make it fully polished for professional submission.  
+
+Do you want me to do that next?
