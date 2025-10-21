@@ -44,12 +44,23 @@ flutter build apk --debug
 ## 📸 Screenshots
 
 **Job List Screen**  
+<img src="screenshots/all_jobs.png" width="300" />
+
 **Job Details Screen**  
+<img src="screenshots/job_details.png" width="300" />
+
 **Login Screen**  
+<img src="screenshots/login.png" width="300" />
+
 
 **App Demo**  
 <img src="screenshots/app_gif.gif" width="300" />
 
+## 📦 Download APK
+
+You can try the app directly by downloading the APK below 👇
+
+👉 [**Download Latest APK**](apk/app-release.apk)
 ## 📁 Project Structure
 
 ```plaintext
