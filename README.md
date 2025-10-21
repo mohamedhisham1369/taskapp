@@ -130,22 +130,7 @@ Password: password
 - 📱 **Tablet UI:** Optimized primarily for mobile screens.  
 - 🧪 **Testing:** Only basic widget and cubit tests included (no full integration tests).  
 
-## 🧪 Testing Instructions
 
-Run all test suites with:
-```bash
-flutter test
-```
-
-To run specific tests (e.g., Job Cubit):
-```bash
-flutter test test/features/jobs/domain/job_cubit_test.dart
-```
-
-You can also enable test coverage:
-```bash
-flutter test --coverage
-```
 
 ## 👨‍💻 Developer
 
