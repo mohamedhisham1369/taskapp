@@ -29,8 +29,7 @@ A complete Flutter application for managing delivery jobs with offline support, 
 - **Networking**: Dio with interceptors
 - **Local Storage**: SharedPreferences for caching & offline queue
 - **UI**: Material Design with custom themes
-- **Navigation**: GoRouter for routing
-- **Testing**: Flutter Test + Mocktail
+- **Navigation**: flutter Routing
 
 ## 🚀 Getting Started
 
