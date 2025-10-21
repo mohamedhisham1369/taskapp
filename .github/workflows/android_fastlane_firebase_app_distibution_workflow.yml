@@ -32,7 +32,7 @@ jobs:
         
     - name: Build and Distribute App
       env:
-        FIREBASE_CLI_TOKEN: 1//03h8-IY49pc1TCgYIARAAGAMSNwF-L9IrHhDF9T1ppSeFRgA4kdJvRiooE5iAYfUS6HMzaER7Zyo37-6exE6reIPnZ06f7F31IxE
+        FIREBASE_CLI_TOKEN: ""
       run: |
         bundle exec fastlane android firebase_distribution
       working-directory: android
