@@ -99,7 +99,7 @@ https://68f6b896f7fb897c661366d7.mockapi.io/api/v1
 | POST | `/auth/login` | User login |
 | GET | `/job?page=1&limit=10` | Paginated job list |
 | GET | `/job/:id` | Fetch job details |
-| PATCH | `/job/:id` | Update job status |
+| put | `/job/:id` | Update job status |
 
 **Demo Credentials:**
 ```
@@ -137,9 +137,6 @@ Password: password
 
 - 💤 **Offline Mode:** Only basic queueing is implemented; complex sync logic is not yet included.  
 - 🔒 **Error Handling:** Some network errors show generic messages.  
-- 🔄 **Refresh Tokens:** Token refresh is not implemented (session expires on logout).  
-- 📱 **Tablet UI:** Optimized primarily for mobile screens.  
-- 🧪 **Testing:** Only basic widget and cubit tests included (no full integration tests).  
 
 
 
@@ -161,3 +158,31 @@ git add README.md
 git commit -m "Add project documentation"
 git push origin main
 ```
+
+
+
+## 🕒 DEVELOPMENT TIMELINE
+
+🕒 DEVELOPMENT TIMELINE
+
+Phase              | Description                                           | Duration
+-------------------|-------------------------------------------------------|-----------
+Phase 1            | Setting up the backend mock API (using mockapi.io)   | ~2–3 hours
+Phase 2            | Project setup, architecture design, authentication   | ~10 minutes
+Phase 3            | Job listing, pagination, and filtering               | ~1 hour
+Phase 4            | Job details, status update, and optimistic UI        | ~1 hour
+Phase 5            | Offline queue, UI polish, and testing                | ~1 hour
+-------------------|-------------------------------------------------------|-----------
+Additional Testing | Final QA and validation                              | ~30 minutes
+-------------------|-------------------------------------------------------|-----------
+Total Development Time                                                    | **~5.5–6.5 hours**
+
+## 🧠 NOTE:
+The backend API used in this project is a MOCK API (for example, using mockapi.io or Beeceptor).
+Configuring or hosting the backend service is NOT part of the Flutter developer’s responsibilities.
+This app simply consumes the given API endpoints according to the assessment requirements.
+
+When you log in, the app sends a POST request to the mock API and stores the returned user data locally.
+User validation is NOT actually performed — this is just a simulated process to demonstrate the
+authentication flow from the Flutter side. Implementing real authentication logic or backend validation
+is outside the scope of this Flutter assessment, as I am not responsible for backend development.
