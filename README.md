@@ -1,16 +1,47 @@
-# erp
+# 🚀 Flutter ERP Task App - Agribasket Assessment
 
-A new Flutter project.
+A complete Flutter application for managing delivery jobs with offline support, real-time status updates, and modern UI/UX. Built for the Agribasket Flutter Developer assessment.
 
-## Getting Started
+## 📱 App Features
 
-This project is a starting point for a Flutter application.
+### ✅ Core Requirements
+- **Authentication** - Secure login with token-based auth
+- **Job Management** - View, filter, and update job statuses  
+- **Pagination** - Infinite scroll with load more
+- **Status Filtering** - Filter by status (All, Pending, Accepted, Picked Up, Delivered)
+- **Real-time Updates** - Optimistic UI with status progression
+- **Offline Support** - Basic offline queue for status updates
+- **Modern UI** - Clean, responsive design with Flutter ScreenUtil
+- **State Management** - BLoC/Cubit for predictable state management
 
-A few resources to get you started if this is your first Flutter project:
+### ✅ Bonus Features (Polish/Extras)
+- **Pull-to-Refresh** - Refresh job list with pull gesture
+- **Empty States** - Helpful empty state illustrations
+- **Loading States** - Skeleton screens during loading
+- **Error Handling** - User-friendly error messages with retry
+- **Status Progress** - Visual progress indicator for job status
+- **Professional UI** - Consistent spacing, touch targets, Material Design
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter** 3.0+ with Dart 3.0+ (Sound Null Safety)
+- **State Management**: BLoC/Cubit
+- **Networking**: Dio with interceptors
+- **Local Storage**: SharedPreferences for caching & offline queue
+- **UI**: Material Design with custom themes
+- **Navigation**: GoRouter for routing
+- **Testing**: Flutter Test + Mocktail
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Flutter 3.0.0 or higher
+- Dart 3.0.0 or higher
+- Android Studio/VSCode
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/mohamedhisham1369/taskapp.git
+cd taskapp
