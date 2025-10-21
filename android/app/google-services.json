@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727884879022",
+    "project_id": "erpapp-95b65",
+    "storage_bucket": "erpapp-95b65.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727884879022:android:5cde8ae61e93d8c68a493f",
+        "android_client_info": {
+          "package_name": "com.tanfeethi.erp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt4cuC6lHcbaLlgNidmnGEWsVqrTEirSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
